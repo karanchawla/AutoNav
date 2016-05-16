@@ -1,0 +1,1 @@
+For 3D/2D transformations read Szeliski Chapter 2
