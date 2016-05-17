@@ -1,0 +1,18 @@
+Kalman Filter
+
+Properties of normal distribution: 
+new mu = ( sigma2 * mu1 / N ) + ( sigma1 * mu2 / N )
+N = sigma1 + sigma2 
+new cov = 1/ (1/sigma1) + (1/sigma2)
+
+Result is more certain than the original covariances. 
+
+Assumption: 1. System evolves linearly over time and depends linearly on controls plus noise.(Gaussian with zero mean and cov Q)
+	    2. Observation depends linearly on state plus noise. (Gaussian with zero mean and cov R)
+
+A = n x n (n dimensional space)
+B = n x l (l dimensional control, n=l fully actuated system)
+C = n x k (observation is k dimensional) from the measurement equation 
+
+Initial belief is gaussian, if no clue how to determine this then just set the mu to zero and a large covariance, meaning we are very uncretain about the initial belief state of the system. 
+
