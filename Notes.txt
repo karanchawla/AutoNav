@@ -15,4 +15,9 @@ B = n x l (l dimensional control, n=l fully actuated system)
 C = n x k (observation is k dimensional) from the measurement equation 
 
 Initial belief is gaussian, if no clue how to determine this then just set the mu to zero and a large covariance, meaning we are very uncretain about the initial belief state of the system. 
+Motion model - prediction step 
+Sensor model - correction step as the mu and cov are corrected by Kalman gain. 
 
+Extended Kalman Filter 
+
+Apply taylor series to motion and sensor models and apply similar formulae. Chapter 3- probablistic robotics. 
